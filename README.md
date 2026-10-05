@@ -17,22 +17,21 @@ Prototype
 
 The prototype uses synthetic incident data and simulates:
 
-incident signal validation;
+•incident signal validation;
 
-evidence collection;
+•evidence collection;
 
-AI-assisted incident analysis;
+•AI-assisted incident analysis;
 
-severity and likely-cause assessment;
+•severity and likely-cause assessment;
 
-recommended investigation steps;
+•recommended investigation steps;
 
-owner recommendation;
+•owner recommendation;
 
-human approval of routing.
+•human approval of routing.
 
 
-Safety
 
 **No real PSP systems, payment data or production actions are connected to the prototype.**
 
