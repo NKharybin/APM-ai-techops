@@ -13,7 +13,7 @@ Incident Signal  →
 Evidence Collection  →
 AI-Assisted Analysis →
 Routing Recommendation →
-Human Approval →
+Human Approval
 
 
 **Prototype**
