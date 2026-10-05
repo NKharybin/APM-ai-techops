@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APM Incident Triage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">TECHNICAL OPERATIONS · APM</div>
+        <h1>APM Incident Triage</h1>
+        <p class="subtitle">AI-assisted incident validation, investigation and routing</p>
+      </div>
+      <div class="status-pill"><span></span> Demo environment</div>
+    </header>
+
+    <section class="workflow" aria-label="Incident workflow">
+      <div class="workflow-step active"><span>01</span><strong>Signal</strong><small>Incident detected</small></div>
+      <div class="workflow-line"></div>
+      <div class="workflow-step"><span>02</span><strong>Evidence</strong><small>Data collected</small></div>
+      <div class="workflow-line"></div>
+      <div class="workflow-step"><span>03</span><strong>AI Analysis</strong><small>Reasoning support</small></div>
+      <div class="workflow-line"></div>
+      <div class="workflow-step"><span>04</span><strong>Recommendation</strong><small>Owner + next checks</small></div>
+      <div class="workflow-line"></div>
+      <div class="workflow-step human"><span>05</span><strong>Human Approval</strong><small>Controlled action</small></div>
+    </section>
+
+    <section class="incident-card">
+      <div class="section-heading">
+        <div>
+          <span class="label">INCIDENT SIGNAL</span>
+          <h2>INC-1042</h2>
+        </div>
+        <span class="incident-state">NEW</span>
+      </div>
+
+      <div class="incident-grid">
+        <div class="field">
+          <span class="field-label">Signal</span>
+          <strong>Payment success rate dropped for iDEAL</strong>
+        </div>
+        <div class="field">
+          <span class="field-label">Provider</span>
+          <strong>Provider A</strong>
+        </div>
+        <div class="field">
+          <span class="field-label">Detected</span>
+          <strong>05 Oct 2026 · 10:15 UTC</strong>
+        </div>
+        <div class="field">
+          <span class="field-label">Initial sources</span>
+          <strong>Monitoring alert · Transaction metrics</strong>
+        </div>
+      </div>
+
+      <button id="analyzeBtn" class="primary-btn">Analyze Incident</button>
+    </section>
+
+    <section id="evidenceSection" class="evidence-card hidden" aria-live="polite">
+      <div class="section-heading">
+        <div>
+          <span class="label">EVIDENCE COLLECTION</span>
+          <h2>Operational context collected</h2>
+        </div>
+        <span class="collection-state">COLLECTED</span>
+      </div>
+
+      <div class="evidence-grid">
+        <div class="evidence-item">
+          <span class="field-label">Monitoring</span>
+          <strong>Payment success rate below baseline</strong>
+          <small>Recent APM metric</small>
+        </div>
+        <div class="evidence-item">
+          <span class="field-label">Transaction signals</span>
+          <strong>Elevated provider-side failures</strong>
+          <small>Recent transaction errors</small>
+        </div>
+        <div class="evidence-item">
+          <span class="field-label">Provider status</span>
+          <strong>No confirmed maintenance notice</strong>
+          <small>Provider status source</small>
+        </div>
+        <div class="evidence-item">
+          <span class="field-label">Webhook delivery</span>
+          <strong>Requires verification</strong>
+          <small>Recommended investigation area</small>
+        </div>
+      </div>
+
+      <div class="evidence-note">
+        <strong>Data quality check:</strong> Evidence is available from multiple operational sources. No single source is treated as definitive.
+      </div>
+    </section>
+
+    <section id="analysisSection" class="analysis-card hidden" aria-live="polite">
+      <div class="section-heading">
+        <div>
+          <span class="label">AI-ASSISTED ANALYSIS</span>
+          <h2>Incident assessment</h2>
+        </div>
+        <span class="confidence">High confidence</span>
+      </div>
+
+      <div class="analysis-grid">
+        <div class="analysis-item severity-item">
+          <span class="field-label">Severity</span>
+          <strong class="severity">HIGH</strong>
+        </div>
+        <div class="analysis-item">
+          <span class="field-label">Classification</span>
+          <strong>Provider / integration issue</strong>
+        </div>
+        <div class="analysis-item wide">
+          <span class="field-label">Likely cause</span>
+          <strong>Increased provider-side payment failures</strong>
+        </div>
+        <div class="analysis-item wide">
+          <span class="field-label">Impact</span>
+          <strong>Elevated payment failure rate detected across iDEAL transactions.</strong>
+        </div>
+      </div>
+
+      <div class="checks-block">
+        <h3>Recommended checks</h3>
+        <ol>
+          <li>Verify provider status</li>
+          <li>Compare recent error codes</li>
+          <li>Check webhook delivery</li>
+          <li>Compare against the previous baseline</li>
+        </ol>
+      </div>
+
+      <div class="recommendation">
+        <div>
+          <span class="field-label">Suggested owner</span>
+          <strong>APM Provider Operations</strong>
+        </div>
+        <div class="recommendation-note">AI recommendation · Human review required</div>
+      </div>
+
+      <div class="actions">
+        <button id="reviewBtn" class="secondary-btn">Review Recommendation</button>
+        <button id="approveBtn" class="primary-btn" disabled>Approve Routing</button>
+      </div>
+
+      <div id="reviewNotice" class="review-notice hidden">
+        <strong>Review complete.</strong> The recommendation is ready for human approval.
+      </div>
+    </section>
+
+    <section id="successSection" class="success-card hidden" aria-live="polite">
+      <div class="success-icon">✓</div>
+      <div>
+        <span class="label">ROUTING APPROVED</span>
+        <h2>Incident routed successfully</h2>
+        <p>INC-1042 was routed to <strong>APM Provider Operations</strong> after human approval.</p>
+      </div>
+    </section>
+
+    <footer>
+      <strong>Synthetic demo data.</strong> No real PSP systems, payment data or production actions are connected.
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
