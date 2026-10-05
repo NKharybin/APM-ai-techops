@@ -35,6 +35,6 @@ Run locally
 
 Open:
 
-**prototype/index.html**
+**prototype/index.html(prototype/index.html)**
 
 in a web browser.
