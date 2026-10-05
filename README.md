@@ -15,21 +15,22 @@ Routing Recommendation →
 Human Approval →
 Prototype
 
-The prototype uses synthetic incident data and simulates:
 
-•incident signal validation;
+**The prototype uses synthetic incident data and simulates:**
 
-•evidence collection;
+• incident signal validation;
 
-•AI-assisted incident analysis;
+• evidence collection;
 
-•severity and likely-cause assessment;
+• AI-assisted incident analysis;
 
-•recommended investigation steps;
+• severity and likely-cause assessment;
 
-•owner recommendation;
+• recommended investigation steps;
 
-•human approval of routing.
+• owner recommendation;
+
+• human approval of routing.
 
 
 
