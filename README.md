@@ -32,11 +32,4 @@ No real PSP systems, payment data or production actions are connected to the pro
 
 Run locally
 
-Open:
-
-**[prototype](prototype/index.html)**
-<a href="https://github.com/NKharybin/APM-ai-techops/blob/main/prototype/index.html" target="_blank"
-
-<a href="https://github.com/NKharybin/APM-ai-techops/blob/main/index.html">Посмотреть превью страницы</a>
-
-in a web browser.
+Open **[prototype](https://nkharybin.github.io/APM-ai-techops/)**
