@@ -35,5 +35,6 @@ Run locally
 Open:
 
 **[prototype](prototype/index.html)**
+<a href="https://github.com/NKharybin/APM-ai-techops/blob/main/prototype/index.html" target="_blank"
 
 in a web browser.
