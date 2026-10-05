@@ -1,4 +1,4 @@
-AI-Assisted APM Incident Triage
+**AI-Assisted APM Incident Triage**
 
 A lightweight prototype demonstrating an AI-assisted workflow for APM Technical Operations incident triage.
 
@@ -8,13 +8,11 @@ The prototype demonstrates how deterministic automation and AI-assisted reasonin
 
 Workflow
 
-Incident Signal  ↓
-Evidence Collection  ↓
-AI-Assisted Analysis
-      ↓
-Routing Recommendation
-      ↓
-Human Approval
+Incident Signal  →
+Evidence Collection  →
+AI-Assisted Analysis →
+Routing Recommendation →
+Human Approval →
 Prototype
 
 The prototype uses synthetic incident data and simulates:
@@ -28,8 +26,6 @@ owner recommendation;
 human approval of routing.
 Safety
 
-No real PSP systems, payment data or production actions are connected to the prototype.
+**No real PSP systems, payment data or production actions are connected to the prototype.**
 
-Run locally
-
-Open **[prototype](https://nkharybin.github.io/APM-ai-techops/)**
+**[Open prototype](https://nkharybin.github.io/APM-ai-techops/)**
