@@ -7,10 +7,9 @@ Purpose
 The prototype demonstrates how deterministic automation and AI-assisted reasoning can support incident validation, evidence collection, investigation and routing while keeping consequential decisions human-controlled.
 
 Workflow
-Incident Signal
-      ↓
-Evidence Collection
-      ↓
+
+Incident Signal  ↓
+Evidence Collection  ↓
 AI-Assisted Analysis
       ↓
 Routing Recommendation
