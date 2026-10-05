@@ -37,6 +37,6 @@ Open:
 **[prototype](prototype/index.html)**
 <a href="https://github.com/NKharybin/APM-ai-techops/blob/main/prototype/index.html" target="_blank"
 
-<a href="https://github.com/NKharybin/APM-ai-techops/blob/main/prototype/index.html" target="_blank">Посмотреть превью страницы</a>
+<a href="https://NKharybin.github.com/APM-ai-techops/blob/main/prototype/index.html">Посмотреть превью страницы</a>
 
 in a web browser.
